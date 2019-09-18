@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+
+    collapedSideBar: boolean;
+
     constructor() {
     }
 
     ngOnInit() {
     }
+
+    receiveCollapsed($event) {
+        this.collapedSideBar = $event;
+    }
+
 }
 
