@@ -7,9 +7,9 @@ const routes: Routes = [
         path: '', component: ProjectsComponent
     }
 ];
-
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
+
 export class ProjectsRoutingModule { }
