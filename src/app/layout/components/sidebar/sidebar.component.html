@@ -1,52 +1,47 @@
 <div class="sidebar" data-color="green">
-    <div class="logo" style="text-align: center;">
-      <a href="" class="simple-text logo-mini">
-        <img src="../assets/img/icon-sidebar.png">
-      </a>
-      <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-        <b>X-BOT</b><br> Criador de chatbots
-      </a>
-    </div>
-    <div class="sidebar-wrapper ps" id="sidebar-wrapper">
-      <ul class="nav">
-        <li>
-          <a [routerLink]="['/dashboard']" [routerLinkActive]="['router-link-active']" href="./dashboard.html">
-            <i class="now-ui-icons business_chart-bar-32"></i>
-            <p>Painel</p>
-          </a>
-        </li>
-        <li>
-          <a [routerLink]="['/administration']" [routerLinkActive]="['router-link-active']" href="./icons.html">
-            <i class="now-ui-icons objects_key-25"></i>
-            <p>Administração</p>
-          </a>
-        </li>
-        <li>
-          <a [routerLink]="['/funcs']" [routerLinkActive]="['router-link-active']" href="./map.html">
-            <i class="now-ui-icons ui-1_send" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-            <p class="dropdown-toggle">Funcionalidades</p>
-            </a><div class="dropdown-menu" style="margin-left: 20px; width: 80%;"><a href="./map.html">
-              </a><a class="dropdown-item" href="#">Empresa</a>
-              <a class="dropdown-item" href="#">Segmento</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Chat</a>
-              <a style="width: 70%; margin-left: 25%;" class="dropdown-item" href="#">Intenção</a>
-              <a style="width: 70%; margin-left: 25%;" class="dropdown-item" href="#">Entidade</a>
-              <a style="width: 70%; margin-left: 25%;" class="dropdown-item" href="#">Diálogo</a>
-            </div>
-        </li>
-        <li class="active">
-          <a [routerLink]="['/projects']" [routerLinkActive]="['router-link-active']" href="./user.html">
-            <i class="now-ui-icons design_bullet-list-67"></i>
-            <p>Projetos</p>
-          </a>
-        </li>
-        <li class="active-pro">
-          <a href="./upgrade.html">
-            <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-            <p>Sincronizar dados</p>
-          </a>
-        </li>
-      </ul>
-    <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+  <!--
+    Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+-->
+  <div class="logo" style="text-align: center;">
+    <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+      <img src="../assets/img/icon-sidebar.png">
+    </a>
+    <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+      <b>X-BOT</b><br> Criador de chatbots
+    </a>
   </div>
+  <div class="sidebar-wrapper" id="sidebar-wrapper">
+    <ul class="nav">
+      <li class="active ">
+        <a href="./dashboard.html">
+          <i class="now-ui-icons business_chart-bar-32"></i>
+          <p>Painel</p>
+        </a>
+      </li>
+      <li>
+        <a href="./icons.html">
+          <i class="now-ui-icons objects_key-25"></i>
+          <p>Administração</p>
+        </a>
+      </li>
+      <li>
+        <a href="./notifications.html">
+          <i class="now-ui-icons ui-1_send"></i>
+          <p>Funcionalidades</p>
+        </a>
+      </li>
+      <li>
+        <a href="./user.html">
+          <i class="now-ui-icons design_bullet-list-67"></i>
+          <p>Projetos</p>
+        </a>
+      </li>
+      <li class="active-pro">
+        <a href="./upgrade.html">
+          <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+          <p>Sincronizar dados</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
