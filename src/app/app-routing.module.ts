@@ -14,4 +14,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+// tslint:disable-next-line:eofline
 export class AppRoutingModule { }
