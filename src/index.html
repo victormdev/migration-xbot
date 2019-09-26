@@ -35,11 +35,10 @@
                     <input formControlName="UserName" type="name" class="form-control"
                       placeholder="Digite o seu usuário" #UserName />
                   </div>
-                  <ng-template
-                    *ngIf="userForm.controls['UserName'].invalid && (userForm.controls['UserName'].dirty || userForm.controls['UserName'].touched)">
+                  <ng-template *ngIf="userForm.controls['UserName'].invalid && (userForm.controls['UserName'].dirty || userForm.controls['UserName'].touched)">
                     <div class="alert alert-danger">
                       <div *ngIf="userForm.controls['UserName'].errors.required">
-                        Por favor, digite o usuário.
+                        Usuário necessário para a autenticação. <i style="color: rgb(255, 255, 255); margin-left: 2%;" class="now-ui-icons travel_info"></i>
                       </div>
                     </div>
                   </ng-template>
@@ -53,11 +52,10 @@
                       compartilhe a sua senha com
                       ninguém.</small>
                   </div>
-                  <ng-template
-                    *ngIf="userForm.controls['UserPassword'].invalid && (userForm.controls['UserPassword'].dirty || userForm.controls['UserPassword'].touched)">
+                  <ng-template *ngIf="userForm.controls['UserPassword'].invalid && (userForm.controls['UserPassword'].dirty || userForm.controls['UserPassword'].touched)">
                     <div class="alert alert-danger">
                       <div *ngIf="userForm.controls['UserPassword'].errors.required">
-                        Por favor, digite a senha.
+                        Senha necessária para autenticação. <i style="color: rgb(255, 255, 255); margin-left: 2%;" class="now-ui-icons travel_info"></i>
                       </div>
                     </div>
                   </ng-template>
