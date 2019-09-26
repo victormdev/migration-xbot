@@ -22,6 +22,7 @@
     "debug": "^4.1.1",
     "express": "^4.17.1",
     "knex": "^0.19.4",
+    "ng2-slim-loading-bar": "^4.0.0",
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3",
     "promise": "^8.0.3",

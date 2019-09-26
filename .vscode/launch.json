@@ -18,7 +18,7 @@
         "type": "node",
         "request": "launch",
         "name": "Launch Program",
-        "program": "${workspaceFolder}\\assets\\js\\login.js"
+        "program": "${workspaceFolder}\\src\\assets\\js\\login.js"
     },
         {
             "type": "node",
