@@ -34,7 +34,7 @@ module.exports = {
 
 app.listen(4000, function () {
     console.log('|======= SERVIDOR === X-BOT =======|');
-    console.log('|* O banco conectou na porta ' + client.port);
+    console.log('|  O banco conectou na porta ' + client.port +' |');
     console.log('|==================================|');
     console.log('* Usuário: ' + client.connectionParameters.user);
     console.log('* Host: ' + client.connectionParameters.host);
