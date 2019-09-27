@@ -25,6 +25,7 @@
     "ng2-slim-loading-bar": "^4.0.0",
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3",
+    "pg-promise": "^9.2.1",
     "promise": "^8.0.3",
     "rxjs": "~6.4.0",
     "sequelize": "^5.19.0",

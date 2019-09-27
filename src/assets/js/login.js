@@ -1,9 +1,14 @@
 const express = require('express');
+const promise = require('bluebird');
 const { Client } = require('pg');
-const connectionString = 'postgres://victor:30165601@127.0.0.1:5432/xbot';
+const connectionString = 'postgres://victor:30165601@127.0.0.1:61117/xbot';
 const client = new Client({
     connectionString: connectionString
 });
+const options = {
+    promiseLib: promise
+}
+const pgp = require('pg-promise')(options);
 
 client.connect();
 
@@ -20,8 +25,19 @@ app.get('/', function (req, res, next) {
     });
 });
 
+const db = pgp (connectionString);
+
+module.exports = {
+    pgp: this.pgp,
+    db: db
+};
+
 app.listen(4000, function () {
     console.log('|======= SERVIDOR === X-BOT =======|');
-    console.log('|* O banco conectou na porta 4000 *|');
+    console.log('|* O banco conectou na porta ' + client.port);
     console.log('|==================================|');
+    console.log('Usuário: ' + client.connectionParameters.user);
+    console.log('Host: ' + client.connectionParameters.host);
+    console.log('Banco: ' + client.connectionParameters.database);
+    console.log(client);
 });
