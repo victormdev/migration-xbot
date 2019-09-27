@@ -27,7 +27,7 @@
     "pg-hstore": "^2.3.3",
     "pg-promise": "^9.2.1",
     "promise": "^8.0.3",
-    "rxjs": "~6.4.0",
+    "rxjs": "^6.4.0",
     "sequelize": "^5.19.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

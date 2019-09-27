@@ -6,70 +6,39 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>Login</title>
+  <title>
+    X-BOT® - Painel
+  </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
     name='viewport' />
-  <!--  Fonts and icons  -->
+  <!--     Fonts and icons    -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- CSS Files -->
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="../assets/css/now-ui-dashboard.css?v=1.3.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
-<body class="body">
-  <div class="content">
-    <div class="row">
-      <div class="col-md-8">
-        <div class="card" style="margin-left: 52%; margin-top: 20%; width: 50%;">
-          <div class="card-header">
-            <h5 style="text-align: center;" class="title">Login</h5>
-          </div>
-          <div class="card-body">
-            <form [formGroup]="userForm">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label style="font-size: 13px;">Usuário</label>
-                    <input formControlName="UserName" type="name" class="form-control"
-                      placeholder="Digite o seu usuário" #UserName />
-                  </div>
-                  <ng-template *ngIf="userForm.controls['UserName'].invalid && (userForm.controls['UserName'].dirty || userForm.controls['UserName'].touched)">
-                    <div class="alert alert-danger">
-                      <div *ngIf="userForm.controls['UserName'].errors.required">
-                        Usuário necessário para a autenticação. <i style="color: rgb(255, 255, 255); margin-left: 2%;" class="now-ui-icons travel_info"></i>
-                      </div>
-                    </div>
-                  </ng-template>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label style="font-size: 13px;">Senha</label>
-                    <input formControlName="UserPassword" type="password" class="form-control"
-                      placeholder="Digite a sua senha" #UserPassword />
-                    <small id="emailHelp" class="form-text text-muted" style="font-size: 10px; margin-left: 3%;">Não
-                      compartilhe a sua senha com
-                      ninguém.</small>
-                  </div>
-                  <ng-template *ngIf="userForm.controls['UserPassword'].invalid && (userForm.controls['UserPassword'].dirty || userForm.controls['UserPassword'].touched)">
-                    <div class="alert alert-danger">
-                      <div *ngIf="userForm.controls['UserPassword'].errors.required">
-                        Senha necessária para autenticação. <i style="color: rgb(255, 255, 255); margin-left: 2%;" class="now-ui-icons travel_info"></i>
-                      </div>
-                    </div>
-                  </ng-template>
-                </div>
-                <div class="col-md-6" style="border-radius: 30px; margin-top: 25px; margin-left: 25%">
-                  <button [disabled]="userForm.pristine || userForm.invalid"
-                    (click)="loginUser(UserName.value, UserPassword.value)" type="submit"
-                    class="btn btn-primary btn-block">Login</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+<body class="">
+  <div class="wrapper">
+
+    <!-- Sidebar Lateral -->
+    <app-sidebar></app-sidebar>
+
+    <div class="main-panel" id="main-panel">
+    
+      <!-- Header -->
+      <app-header></app-header>
+
+      <!-- Navegação das páginas -->
+      <router-outlet></router-outlet>
+
+      <!-- Rodapé -->
+      <app-footer></app-footer>
+
     </div>
   </div>
   <!--   Core JS Files   -->
@@ -79,5 +48,12 @@
   <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <!-- Chart JS -->
   <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/now-ui-dashboard.min.js?v=1.3.0" type="text/javascript"></script>
+  <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
 </body>
+
 </html>
