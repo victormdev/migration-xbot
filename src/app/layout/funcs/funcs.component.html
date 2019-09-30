@@ -1,0 +1,498 @@
+<div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="title">Cadastrar empresa</h5>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row">
+                <div class="col-md-5 pr-1">
+                  <div class="form-group">
+                    <label>Projeto</label>
+                    <input type="text" class="form-control" placeholder="Digite o nome do projeto">
+                  </div>
+                </div>
+                <div class="col-md-3 px-1">
+                  <div class="form-group">
+                    <label>Empresa</label>
+                    <input type="text" class="form-control" placeholder="Empresa">
+                  </div>
+                </div>
+                <div class="col-md-4 pl-1">
+                  <div class="form-group">
+                    <label for="exampleArea">Contato</label>
+                    <input class="form-control" placeholder="Digite o número de contato" id="telefone" data-mask="(00)0000-0000">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect2">E-mail</label>
+                    <input type="email" class="form-control" id="exampleFormControlSelect2" class="form-control"
+                      placeholder="Digite o e-mail">
+                  </div>
+                </div>
+                <div class="col-md-6 pl-1">
+                  <div class="form-group">
+                    <label>CNPJ</label>
+                    <input class="form-control" id="cnpj" placeholder="CNPJ da empresa">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group phone-ddd-mask">
+                    <label>Telefone com DDD</label>
+                    <input type="tel" class="form-control" id="telefone" data-mask="(00)0000-0000"
+                      placeholder="Número de telefone da empresa">
+                  </div>
+                </div>
+                <div class="col-md-6 pl-1">
+                  <div class="form-group">
+                    <label>Status</label>
+                    <select type="date" class="form-control">
+                      <option value="">Selecione o status de atividade</option>
+                      <option value="">Ativo</option>
+                      <option value="">Inativo</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary btn-block"
+                    onclick="nowuiDashboard.showNotification('top','left')">Cadastrar nova</button>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary btn-block"
+                    onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary btn-block"
+                    onclick="nowuiDashboard.showNotification('top','center')">Salvar e Criar</button>
+                </div>
+              </div>
+              <div class="card-body">
+                  <h5 style="text-align: center;" class="title">Empresas</h5>
+                  <div style="margin-left: 25%;" class="col-md-6">
+                    <div class="input-group no-border">
+                      <input type="text" value="" class="form-control" placeholder="Pesquise por nome, contato, e-mail, CNPJ, projetos ou função.">
+                      <div class="input-group-append">
+                        <div class="input-group-text">
+                          <i class="now-ui-icons ui-1_zoom-bold"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div style="margin-top: 5%;" class="table-responsive">
+                  <table class="table">
+                    <thead class=" text-primary">
+                      <th>
+                        <b>Nome</b>
+                      </th>
+                      <th>
+                        <b>Contato</b>
+                      </th>
+                      <th>
+                        <b>E-mail</b>
+                      </th>
+                      <th>
+                        <b>CNPJ</b>
+                      </th>
+                      <th>
+                        <b>Projetos</b>
+                      </th>
+                      <th class="text-right">
+                        <b>Ações</b>
+                      </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          X-Testing
+                        </td>
+                        <td>Marcus
+                        </td>
+                        <td>
+                          marcus.dratovisky@xtesting.com.br
+                        </td>
+                        <td>
+                          123456789/0007-11
+                        </td>
+                        <td>
+                          Chat Interno<br>
+                          Chat Site
+                        </td>
+                        <td class="text-right">
+                          <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                          <i style="margin-left: 10px; color: rgb(233, 19, 19);"
+                            class="now-ui-icons ui-1_simple-remove"
+                            onclick="nowuiDashboard.showNotification('top','center')"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Morena Veículos
+                        </td>
+                        <td>
+                          Clemer
+                        </td>
+                        <td>
+                          clemer@morea.com.br
+                        </td>
+                        <td>
+                          987654321/0001-11
+                        </td>
+                        <td>
+                          Chat Site
+                        </td>
+                        <td class="text-right">
+                          <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                          <i style="margin-left: 10px; color: rgb(233, 19, 19);"
+                            class="now-ui-icons ui-1_simple-remove"
+                            onclick="nowuiDashboard.showNotification('top','center')"></i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="title">Segmento</h5>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="form-group">
+                    <label>Projeto</label>
+                    <input type="text" class="form-control" placeholder="Digite o nome do projeto">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Status</label>
+                    <select type="text" class="form-control">
+                      <option value="">Selecione o status de atividade</option>
+                      <option value="">Ativo</option>
+                      <option value="">Inativo</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary btn-block"
+                    onclick="nowuiDashboard.showNotification('top','left')">Cadastrar novo</button>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary btn-block"
+                    onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary btn-block"
+                    onclick="nowuiDashboard.showNotification('top','center')">Salvar e Criar</button>
+                </div>
+              </div>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class=" text-primary">
+                  <th>
+                    <b>Nome</b>
+                  </th>
+                  <th>
+                    <b>Status</b>
+                  </th>
+                  <th class="text-right">
+                    <b>Ações</b>
+                  </th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Laboratório
+                    </td>
+                    <td>Ativo
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Tecnologia
+                    </td>
+                    <td>
+                      Ativo
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Escola
+                    </td>
+                    <td>
+                      Ativo
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Concessionária
+                    </td>
+                    <td>
+                      Ativo
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Interno
+                    </td>
+                    <td>
+                      Ativo
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Órgão público
+                    </td>
+                    <td>
+                      Ativo
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="title">Integrações</h5>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" class="form-control" placeholder="Digite o nome do integrante">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Tem custo?</label>
+                  </div>
+                  <div style="margin-top: -4%;">
+                    <div class="form-check form-check-radio form-check-inline">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                          value="option1"> Sim
+                        <span class="form-check-sign"></span>
+                      </label>
+                    </div>
+                    <div class="form-check form-check-radio form-check-inline">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                          value="option2"> Não
+                        <span class="form-check-sign"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Status</label>
+                    <select type="text" class="form-control">
+                      <option value="">Selecione o status de atividade</option>
+                      <option value="">Ativo</option>
+                      <option value="">Inativo</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary btn-block"
+                    onclick="nowuiDashboard.showNotification('top','left')">Cadastrar nova</button>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary btn-block"
+                    onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary btn-block"
+                    onclick="nowuiDashboard.showNotification('top','center')">Salvar e Criar</button>
+                </div>
+              </div>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class=" text-primary">
+                  <th>
+                    <b>Nome</b>
+                  </th>
+                  <th>
+                    <b>Custo</b>
+                  </th>
+                  <th>
+                    <b>Status</b>
+                  </th>
+                  <th class="text-right">
+                    <b>Ações</b>
+                  </th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Facebook
+                    </td>
+                    <td>Não
+                    </td>
+                    <td>Ativo
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Postgree
+                    </td>
+                    <td>Não
+                    </td>
+                    <td>
+                      Ativo
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Telegram
+                    </td>
+                    <td>Não
+                    </td>
+                    <td>
+                      Ativo
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Web Service
+                    </td>
+                    <td>Não
+                    </td>
+                    <td>
+                      Ativo
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      WhatsApp
+                    </td>
+                    <td>Não
+                    </td>
+                    <td>
+                      Ativo
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Oracle
+                    </td>
+                    <td>Não
+                    </td>
+                    <td>
+                      Ativo
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
