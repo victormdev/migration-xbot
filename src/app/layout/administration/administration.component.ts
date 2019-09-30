@@ -11,4 +11,5 @@ export class AdministrationComponent implements OnInit {
 
     ngOnInit() {}
 
+// tslint:disable-next-line:eofline
 }

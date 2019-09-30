@@ -6,13 +6,14 @@ import { AdministrationComponent } from './layout/administration/administration.
 import { FuncsComponent } from './layout/funcs/funcs.component';
 import { ProjectsComponent } from './layout/projects/projects.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
-
+import { LoginComponent } from './login/login/login.component';
 const routes: Routes = [
   { path: '', component: LayoutComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'funcs', component: FuncsComponent },
   { path: 'administration', component: AdministrationComponent },
-  { path: 'dashboard', component: DashboardComponent }
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'login', component: LoginComponent }
 ];
 
 @NgModule({
