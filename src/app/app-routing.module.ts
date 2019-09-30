@@ -6,7 +6,8 @@ import { AdministrationComponent } from './layout/administration/administration.
 import { FuncsComponent } from './layout/funcs/funcs.component';
 import { ProjectsComponent } from './layout/projects/projects.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
-import { LoginComponent } from './login/login/login.component';
+import { LoginComponent } from './layout/login/login.component';
+
 const routes: Routes = [
   { path: '', component: LayoutComponent },
   { path: 'projects', component: ProjectsComponent },
