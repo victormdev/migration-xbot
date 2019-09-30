@@ -7,7 +7,7 @@ import { ProjectsModule } from './layout/projects/projects.module';
 import { DashboardModule } from './layout/dashboard/dashboard.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './layout/login/login.component';
 
 @NgModule({
   declarations: [
