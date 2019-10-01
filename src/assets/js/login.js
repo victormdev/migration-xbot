@@ -1,7 +1,7 @@
 const express = require('express');
 const promise = require('bluebird');
 const { Client } = require('pg');
-const connectionString = 'postgres://victor:30165601@127.0.0.1:63755/xbot';
+const connectionString = 'postgres://victor:30165601@127.0.0.1:50410/xbot';
 const client = new Client({
     connectionString: connectionString
 });

@@ -3,9 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProjectsComponent } from './projects.component';
 
 const routes: Routes = [
-    {
-        path: 'projects', component: ProjectsComponent
-    }
+    { path: 'projects', component: ProjectsComponent }
 ];
 @NgModule({
     imports: [RouterModule.forRoot(routes)],

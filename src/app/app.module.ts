@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { LayoutComponent } from './layout/layout.component';
-import { AdministrationModule } from './layout/administration/administration.module';
-import { FuncsModule } from './layout/funcs/funcs.module';
-import { ProjectsModule } from './layout/projects/projects.module';
-import { DashboardModule } from './layout/dashboard/dashboard.module';
+import { AdministrationComponent } from './layout/administration/administration.component';
+import { FuncsComponent } from './layout/funcs/funcs.component';
+import { ProjectsComponent } from './layout/projects/projects.component';
+import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './layout/login/login.component';
@@ -17,10 +17,10 @@ import { LoginComponent } from './layout/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProjectsModule,
-    FuncsModule,
-    AdministrationModule,
-    DashboardModule
+    ProjectsComponent,
+    FuncsComponent,
+    AdministrationComponent,
+    DashboardComponent
 
   ],
   providers: [],
