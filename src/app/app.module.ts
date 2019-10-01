@@ -1,18 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { LayoutComponent } from './layout/layout.component';
-import { AdministrationComponent } from './layout/administration/administration.component';
-import { FuncsComponent } from './layout/funcs/funcs.component';
-import { ProjectsComponent } from './layout/projects/projects.component';
-import { DashboardComponent } from './layout/dashboard/dashboard.component';
+import { AdministrationComponent } from './administration/administration.component';
+import { FuncsComponent } from './funcs/funcs.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './layout/login/login.component';
+import { LoginComponent } from './login/login.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
