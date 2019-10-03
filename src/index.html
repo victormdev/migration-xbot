@@ -39,25 +39,25 @@
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li class="active ">
-            <a href="./dashboard.html">
+            <a [routerLink]="['/dashboard']" [routerLinkActive]="['active']">
               <i class="now-ui-icons business_chart-bar-32"></i>
               <p>Painel</p>
             </a>
           </li>
           <li>
-            <a href="./icons.html">
+            <a [routerLink]="['/administration']" [routerLinkActive]="['active']">
               <i class="now-ui-icons objects_key-25"></i>
               <p>Administração</p>
             </a>
           </li>
           <li>
-            <a href="./notifications.html">
+            <a [routerLink]="['/funcs']" [routerLinkActive]="['active']" (click)="addExpandFuncs('actions')">
               <i class="now-ui-icons ui-1_send"></i>
               <p>Funcionalidades</p>
             </a>
           </li>
           <li>
-            <a href="./user.html">
+            <a [routerLink]="['/projects']" [routerLinkActive]="['active']">
               <i class="now-ui-icons design_bullet-list-67"></i>
               <p>Projetos</p>
             </a>
@@ -73,7 +73,7 @@
     </div>
     
     <div class="main-panel" id="main-panel">
-<nav class="navbar navbar-expand-lg navbar-transparent  bg-primary  navbar-absolute">
+<nav class="navbar navbar-expand-lg navbar  bg-success  navbar-absolute">
         <div class="container-fluid">
           <div class="navbar-wrapper">
             <div class="navbar-toggle">
@@ -83,7 +83,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Painel</a>
+            <a class="navbar-brand" href="#pablo">{{ navTitle }}</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
             aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -145,7 +145,7 @@
     <div class="main-panel" id="main-panel">
     
       <!-- Header -->
-      <app-header></app-header>
+      <app-root></app-root>
 
       <!-- Navegação das páginas -->
       <router-outlet></router-outlet>
