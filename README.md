@@ -1,6 +1,6 @@
 # Xbot
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+Esse projeto foi gerado com Angular [Angular CLI](https://github.com/angular/angular-cli) na versão 8.3.4.
 
 ## Serviço de desenvolvimento
 
