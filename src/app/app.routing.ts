@@ -17,4 +17,5 @@ const routes: Routes = [
     { path: '**', redirectTo: '' }
 ];
 
+// tslint:disable-next-line:eofline
 export const appRoutingModule = RouterModule.forRoot(routes);
