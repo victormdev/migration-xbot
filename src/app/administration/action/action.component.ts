@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  selector: 'app-action',
+  templateUrl: './action.component.html',
+  styleUrls: ['./action.component.css']
 })
-export class ProjectsComponent implements OnInit {
+export class ActionComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,

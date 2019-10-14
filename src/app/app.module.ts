@@ -1,34 +1,48 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AdministrationComponent } from './administration/administration.component';
-import { AdministrationModule } from './administration/administration.module';
-import { FuncsComponent } from './funcs/funcs.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ProjectsModule } from './projects/projects.module';
-import { FuncsModule } from './funcs/funcs.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { RouterModule } from '@angular/router';
+import { FuncsComponent } from './funcs/funcs.component';
+import { AdministrationComponent } from './administration/administration.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
-import { DashboardModule } from './dashboard/dashboard.module';
-import { HeaderComponent } from './components/header/header.component';
+import { UserComponent } from './administration/user/user.component';
+import { PaperComponent } from './administration/paper/paper.component';
+import { ActionComponent } from './administration/action/action.component';
+import { AdmFuncsComponent } from './administration/admfuncs/admfuncs.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    HeaderComponent,
+    NavbarComponent,
+    SidebarComponent,
     ProjectsComponent,
     FuncsComponent,
-    AdministrationComponent
+    AdministrationComponent,
+    DashboardComponent,
+    LoginComponent,
+    UserComponent,
+    PaperComponent,
+    ActionComponent,
+    AdmFuncsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProjectsModule,
-    FuncsModule,
-    AdministrationModule,
-    DashboardModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot([
+      { path: '', component: AppComponent },
+      { path: 'projects', component: ProjectsComponent },
+      { path: 'funcs', component: FuncsComponent },
+      { path: 'administration', component: AdministrationComponent }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

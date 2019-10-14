@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'xbot'`, () => {
+  it(`should have as title 'xbot-code'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('xbot');
+    expect(app.title).toEqual('xbot-code');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('xbot app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('xbot-code app is running!');
   });
 });

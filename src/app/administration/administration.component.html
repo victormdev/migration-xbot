@@ -1,662 +1,685 @@
-<div class="content">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-header">
-              <h5 class="title">Cadastrar usuário</h5>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Nome</label>
-                    <input type="text" class="form-control" placeholder="Digite o nome do usuário">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Login</label>
-                    <input type="text" class="form-control"
-                      placeholder="Digite o login do usuário. Ex: waltercardoso9">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Status</label>
-                    <select type="text" class="form-control">
-                      <option value="">Selecione o status de atividade</option>
-                      <option value="">Ativo</option>
-                      <option value="">Inativo</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Papel</label>
-                    <select type="text" class="form-control">
-                      <option value="">Selecione o papel do usuário</option>
-                      <option value="">Administrador</option>
-                      <option value="">Especialista</option>
-                      <option value="">Usuário</option>
-                      <option value="">Testador</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-primary btn-block"
-                    onclick="nowuiDashboard.showNotification('top','left')">Cadastrar novo</button>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-primary btn-block"
-                    onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-primary btn-block"
-                    onclick="nowuiDashboard.showNotification('top','center')">Salvar e Criar</button>
-                </div>
-              </div>
-          </div>
-          
-          <div class="card-body">
-            <h5 style="text-align: center;" class="title">Usuários</h5>
-                <div style="margin-left: 25%;" class="col-md-6">
-                  <div class="input-group no-border">
-                    <input type="text" value="" class="form-control" placeholder="Pesquise por nome, login ou função.">
-                    <div class="input-group-append">
-                      <div class="input-group-text">
-                        <i class="now-ui-icons ui-1_zoom-bold"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            <div style="margin-top: 5%;" class="table-responsive">
-              <table class="table">
-                <thead class=" text-primary">
-                  <th>
-                    <b>Nome</b>
-                  </th>
-                  <th>
-                    <b>Login</b>
-                  </th>
-                  <th>
-                    <b>Papel</b>
-                  </th>
-                  <th>
-                    <b>Status</b>
-                  </th>
-                  <th class="text-right">
-                    <b>Ações</b>
-                  </th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      Administrador
-                    </td>
-                    <td>admin
-                    </td>
-                    <td>Administrador
-                    </td>
-                    <td>Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Especialista
-                    </td>
-                    <td>
-                      espec
-                    </td>
-                    <td>
-                      Especialista
-                    </td>
-                    <td>
-                      Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Usuário
-                    </td>
-                    <td>
-                      user
-                    </td>
-                    <td>
-                      Usuário
-                    </td>
-                    <td>
-                      Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Tester
-                    </td>
-                    <td>
-                      test
-                    </td>
-                    <td>
-                      Testador(a)
-                    </td>
-                    <td>
-                      Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          </form>
+<div class="panel-header panel-header-sm">
+</div>
+<div class="card card-nav-tabs card-plain">
+    <div class="card-header card-header-success">
+      <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+      <div class="nav-tabs-navigation">
+        <div class="nav-tabs-wrapper">
+          <ul class="nav nav-tabs" data-tabs="tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#user" data-toggle="tab">Usuário</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#paper" data-toggle="tab">Papel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#funcs" data-toggle="tab">Funcionalidade</a>
+              <li class="nav-item">
+              <a class="nav-link" href="#action" data-toggle="tab">Ação</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="content">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-header">
-            <h5 class="title">Cadastrar papel</h5>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Nome</label>
-                    <input type="text" class="form-control" placeholder="Digite o nome do papel">
-                  </div>
+    <div class="card-body">
+      <div class="tab-content text-center">
+        <div class="tab-pane active" id="user">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header">
+                    <h5 class="title">Cadastrar usuário</h5>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Status</label>
-                    <select type="text" class="form-control">
-                      <option value="">Selecione o status de atividade</option>
-                      <option value="">Ativo</option>
-                      <option value="">Inativo</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                      <label>Funcionalidade</label>
-                      <select type="text" class="form-control">
-                        <option value="">Selecione a funcionalidade</option>
-                        <option value="">Administrativo / Empresa</option>
-                        <option value="">Administrativo / Papel</option>
-                      </select>
-                    </div>
-                  </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                      <label>Ações</label>
-                      <select type="text" class="form-control">
-                        <option value="">Selecione a ação do papel</option>
-                        <option value="">Ativo</option>
-                        <option value="">Inativo</option>
-                      </select>
-                    </div>
-                  </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-primary btn-block"
-                    onclick="nowuiDashboard.showNotification('top','left')">Cadastrar novo</button>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-primary btn-block"
-                    onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-primary btn-block"
-                    onclick="nowuiDashboard.showNotification('top','center')">Salvar e Criar</button>
-                </div>
-              </div>
-          </div>
-          
-          <div class="card-body">
-            <h5 style="text-align: center;" class="title">Papéis</h5>
-                <div style="margin-left: 25%;" class="col-md-6">
-                  <div class="input-group no-border">
-                    <input type="text" value="" class="form-control" placeholder="Pesquise por nome ou status.">
-                    <div class="input-group-append">
-                      <div class="input-group-text">
-                        <i class="now-ui-icons ui-1_zoom-bold"></i>
+                <div class="card-body">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Nome</label>
+                          <input type="text" class="form-control" placeholder="Digite o nome do usuário">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Login</label>
+                          <input type="text" class="form-control"
+                            placeholder="Digite o login do usuário. Ex: waltercardoso9">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Status</label>
+                          <select type="text" class="form-control">
+                            <option value="">Selecione o status de atividade</option>
+                            <option value="">Ativo</option>
+                            <option value="">Inativo</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Papel</label>
+                          <select type="text" class="form-control">
+                            <option value="">Selecione o papel do usuário</option>
+                            <option value="">Administrador</option>
+                            <option value="">Especialista</option>
+                            <option value="">Usuário</option>
+                            <option value="">Testador</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                      </div>
+                      <div class="col-md-2">
+                        <button class="btn btn-primary btn-block"
+                          onclick="nowuiDashboard.showNotification('top','left')">Cadastrar novo</button>
+                      </div>
+                      <div class="col-md-2">
+                        <button class="btn btn-primary btn-block"
+                          onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
+                      </div>
+                      <div class="col-md-2">
+                        <button class="btn btn-primary btn-block"
+                          onclick="nowuiDashboard.showNotification('top','center')">Salvar e Criar</button>
+                      </div>
+                    </div>
+                
+                <div class="card-body">
+                  <h5 style="text-align: center;" class="title">Usuários</h5>
+                      <div style="margin-left: 25%;" class="col-md-6">
+                        <div class="input-group no-border">
+                          <input type="text" value="" class="form-control" placeholder="Pesquise por nome, login ou função.">
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              <i class="now-ui-icons ui-1_zoom-bold"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  <div style="margin-top: 5%;" class="table-responsive">
+                    <table class="table">
+                      <thead class=" text-primary">
+                        <th>
+                          <b>Nome</b>
+                        </th>
+                        <th>
+                          <b>Login</b>
+                        </th>
+                        <th>
+                          <b>Papel</b>
+                        </th>
+                        <th>
+                          <b>Status</b>
+                        </th>
+                        <th class="text-right">
+                          <b>Ações</b>
+                        </th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Administrador
+                          </td>
+                          <td>admin
+                          </td>
+                          <td>Administrador
+                          </td>
+                          <td>Ativo
+                          </td>
+                          <td class="text-right">
+                            <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                            <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                              onclick="nowuiDashboard.showNotification('top','center')"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Especialista
+                          </td>
+                          <td>
+                            espec
+                          </td>
+                          <td>
+                            Especialista
+                          </td>
+                          <td>
+                            Ativo
+                          </td>
+                          <td class="text-right">
+                            <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                            <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                              onclick="nowuiDashboard.showNotification('top','center')"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Usuário
+                          </td>
+                          <td>
+                            user
+                          </td>
+                          <td>
+                            Usuário
+                          </td>
+                          <td>
+                            Ativo
+                          </td>
+                          <td class="text-right">
+                            <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                            <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                              onclick="nowuiDashboard.showNotification('top','center')"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Tester
+                          </td>
+                          <td>
+                            test
+                          </td>
+                          <td>
+                            Testador(a)
+                          </td>
+                          <td>
+                            Ativo
+                          </td>
+                          <td class="text-right">
+                            <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                            <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                              onclick="nowuiDashboard.showNotification('top','center')"></i>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-            <div style="margin-top: 5%;" class="table-responsive">
-              <table class="table">
-                <thead class=" text-primary">
-                  <th>
-                    <b>Nome</b>
-                  </th>
-                  <th>
-                    <b>Status</b>
-                  </th>
-                  <th class="text-right">
-                    <b>Ações</b>
-                  </th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      Administrador
-                    </td>
-                    <td>Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Especialista
-                    </td>
-                    <td>
-                      Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Usuário
-                    </td>
-                    <td>
-                      Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Tester
-                    </td>
-                    <td>
-                      Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                </form>
+              </div>
             </div>
           </div>
-          </form>
         </div>
+        </div>
+        <div class="tab-pane" id="paper">
+            <div class="row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="title">Cadastrar papel</h5>
+                    </div>
+                    <div class="card-body">
+                      <form>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Nome</label>
+                              <input type="text" class="form-control" placeholder="Digite o nome do papel">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Status</label>
+                              <select type="text" class="form-control">
+                                <option value="">Selecione o status de atividade</option>
+                                <option value="">Ativo</option>
+                                <option value="">Inativo</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Funcionalidade</label>
+                                <select type="text" class="form-control">
+                                  <option value="">Selecione a funcionalidade</option>
+                                  <option value="">Administrativo / Empresa</option>
+                                  <option value="">Administrativo / Papel</option>
+                                </select>
+                              </div>
+                            </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Ações</label>
+                                <select type="text" class="form-control">
+                                  <option value="">Selecione a ação do papel</option>
+                                  <option value="">Ativo</option>
+                                  <option value="">Inativo</option>
+                                </select>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                          </div>
+                          <div class="col-md-2">
+                            <button class="btn btn-primary btn-block"
+                              onclick="nowuiDashboard.showNotification('top','left')">Cadastrar novo</button>
+                          </div>
+                          <div class="col-md-2">
+                            <button class="btn btn-primary btn-block"
+                              onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
+                          </div>
+                          <div class="col-md-2">
+                            <button class="btn btn-primary btn-block"
+                              onclick="nowuiDashboard.showNotification('top','center')">Salvar e Criar</button>
+                          </div>
+                        </div>
+                    
+                    <div class="card-body">
+                      <h5 style="text-align: center;" class="title">Papéis</h5>
+                          <div style="margin-left: 25%;" class="col-md-6">
+                            <div class="input-group no-border">
+                              <input type="text" value="" class="form-control" placeholder="Pesquise por nome ou status.">
+                              <div class="input-group-append">
+                                <div class="input-group-text">
+                                  <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      <div style="margin-top: 5%;" class="table-responsive">
+                        <table class="table">
+                          <thead class=" text-primary">
+                            <th>
+                              <b>Nome</b>
+                            </th>
+                            <th>
+                              <b>Status</b>
+                            </th>
+                            <th class="text-right">
+                              <b>Ações</b>
+                            </th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                Administrador
+                              </td>
+                              <td>Ativo
+                              </td>
+                              <td class="text-right">
+                                <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                                <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                                  onclick="nowuiDashboard.showNotification('top','center')"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Especialista
+                              </td>
+                              <td>
+                                Ativo
+                              </td>
+                              <td class="text-right">
+                                <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                                <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                                  onclick="nowuiDashboard.showNotification('top','center')"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Usuário
+                              </td>
+                              <td>
+                                Ativo
+                              </td>
+                              <td class="text-right">
+                                <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                                <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                                  onclick="nowuiDashboard.showNotification('top','center')"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Tester
+                              </td>
+                              <td>
+                                Ativo
+                              </td>
+                              <td class="text-right">
+                                <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                                <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                                  onclick="nowuiDashboard.showNotification('top','center')"></i>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
       </div>
+      <div class="tab-pane" id="funcs">
+          <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="title">Cadastrar funcionalidade</h5>
+                  </div>
+                  <div class="card-body">
+                    <form>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Nome</label>
+                            <input type="text" class="form-control" placeholder="Digite o nome da funcionalidade">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Descrição</label>
+                              <input type="text" class="form-control" placeholder="Digite a descrição da funcionalidade">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Endereço</label>
+                                <input type="text" class="form-control" placeholder="Digite o endereço da funcionalidade">
+                              </div>
+                            </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Status</label>
+                            <select type="text" class="form-control">
+                              <option value="">Selecione o status de atividade</option>
+                              <option value="">Ativo</option>
+                              <option value="">Inativo</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                        </div>
+                        <div class="col-md-2">
+                          <button class="btn btn-primary btn-block"
+                            onclick="nowuiDashboard.showNotification('top','left')">Cadastrar novo</button>
+                        </div>
+                        <div class="col-md-2">
+                          <button class="btn btn-primary btn-block"
+                            onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
+                        </div>
+                        <div class="col-md-2">
+                          <button class="btn btn-primary btn-block"
+                            onclick="nowuiDashboard.showNotification('top','center')">Salvar e Criar</button>
+                        </div>
+                      </div>
+                  
+                  <div class="card-body">
+                    <h5 style="text-align: center;" class="title">Funcionalidades</h5>
+                        <div style="margin-left: 25%;" class="col-md-6">
+                          <div class="input-group no-border">
+                            <input type="text" value="" class="form-control" placeholder="Pesquise por nome, descrição, endereço ou status.">
+                            <div class="input-group-append">
+                              <div class="input-group-text">
+                                <i class="now-ui-icons ui-1_zoom-bold"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    <div style="margin-top: 5%;" class="table-responsive">
+                      <table class="table">
+                        <thead class=" text-primary">
+                          <th>
+                            <b>Nome</b>
+                          </th>
+                          <th>
+                              <b>Descrição</b>
+                            </th>
+                            <th>
+                                <b>Endereço</b>
+                              </th>
+                          <th>
+                            <b>Status</b>
+                          </th>
+                          <th class="text-right">
+                            <b>Ações</b>
+                          </th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              Administração
+                            </td>
+                            <td>
+                                Módulo de administração do sistema
+                              </td>
+                              <td>
+                                  administracao/
+                                </td>
+                            <td>Ativo
+                            </td>
+                            <td class="text-right">
+                              <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                              <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                                onclick="nowuiDashboard.showNotification('top','center')"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Funcionalidades
+                            </td>
+                            <td>
+                                Módulo de administração do sistema
+                              </td>
+                              <td>
+                                  funcionalidade/
+                                </td>
+                            <td>
+                              Ativo
+                            </td>
+                            <td class="text-right">
+                              <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                              <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                                onclick="nowuiDashboard.showNotification('top','center')"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Projetos
+                            </td>
+                            <td>
+                                Módulo de administração do sistema
+                              </td>
+                              <td>
+                                  projeto/
+                                </td>
+                            <td>
+                              Ativo
+                            </td>
+                            <td class="text-right">
+                              <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                              <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                                onclick="nowuiDashboard.showNotification('top','center')"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Painel
+                            </td>
+                            <td>
+                                Módulo de painéis do sistema
+                              </td>
+                              <td>
+                                  painel/
+                                </td>
+                            <td>
+                              Ativo
+                            </td>
+                            <td class="text-right">
+                              <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                              <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                                onclick="nowuiDashboard.showNotification('top','center')"></i>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
-  </div>
-
-  <div class="content">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-header">
-            <h5 class="title">Cadastrar funcionalidade</h5>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Nome</label>
-                    <input type="text" class="form-control" placeholder="Digite o nome da funcionalidade">
-                  </div>
+    <div class="tab-pane" id="action">
+        <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="title">Cadastrar ação</h5>
                 </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                      <label>Descrição</label>
-                      <input type="text" class="form-control" placeholder="Digite a descrição da funcionalidade">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Endereço</label>
-                        <input type="text" class="form-control" placeholder="Digite o endereço da funcionalidade">
+                <div class="card-body">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Nome</label>
+                          <input type="text" class="form-control" placeholder="Digite o nome da ação">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Status</label>
+                          <select type="text" class="form-control">
+                            <option value="">Selecione o status de atividade</option>
+                            <option value="">Ativo</option>
+                            <option value="">Inativo</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Status</label>
-                    <select type="text" class="form-control">
-                      <option value="">Selecione o status de atividade</option>
-                      <option value="">Ativo</option>
-                      <option value="">Inativo</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-primary btn-block"
-                    onclick="nowuiDashboard.showNotification('top','left')">Cadastrar novo</button>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-primary btn-block"
-                    onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-primary btn-block"
-                    onclick="nowuiDashboard.showNotification('top','center')">Salvar e Criar</button>
-                </div>
-              </div>
-          </div>
-          
-          <div class="card-body">
-            <h5 style="text-align: center;" class="title">Funcionalidades</h5>
-                <div style="margin-left: 25%;" class="col-md-6">
-                  <div class="input-group no-border">
-                    <input type="text" value="" class="form-control" placeholder="Pesquise por nome, descrição, endereço ou status.">
-                    <div class="input-group-append">
-                      <div class="input-group-text">
-                        <i class="now-ui-icons ui-1_zoom-bold"></i>
+                    <div class="row">
+                      <div class="col-md-6">
+                      </div>
+                      <div class="col-md-2">
+                        <button class="btn btn-primary btn-block"
+                          onclick="nowuiDashboard.showNotification('top','left')">Cadastrar novo</button>
+                      </div>
+                      <div class="col-md-2">
+                        <button class="btn btn-primary btn-block"
+                          onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
+                      </div>
+                      <div class="col-md-2">
+                        <button class="btn btn-primary btn-block"
+                          onclick="nowuiDashboard.showNotification('top','center')">Salvar e Criar</button>
                       </div>
                     </div>
+                
+                <div class="card-body">
+                  <h5 style="text-align: center;" class="title">Ações</h5>
+                      <div style="margin-left: 25%;" class="col-md-6">
+                        <div class="input-group no-border">
+                          <input type="text" value="" class="form-control" placeholder="Pesquise por nome da ação ou status.">
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              <i class="now-ui-icons ui-1_zoom-bold"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  <div style="margin-top: 5%;" class="table-responsive">
+                    <table class="table">
+                      <thead class=" text-primary">
+                        <th>
+                          <b>Nome</b>
+                        </th>
+                        <th>
+                          <b>Status</b>
+                        </th>
+                        <th class="text-right">
+                          <b>Ações</b>
+                        </th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Consultar
+                          </td>
+                          <td>Ativo
+                          </td>
+                          <td class="text-right">
+                            <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                            <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                              onclick="nowuiDashboard.showNotification('top','center')"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Cadastrar
+                          </td>
+                          <td>
+                            Ativo
+                          </td>
+                          <td class="text-right">
+                            <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                            <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                              onclick="nowuiDashboard.showNotification('top','center')"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Editar
+                          </td>
+                          <td>
+                            Ativo
+                          </td>
+                          <td class="text-right">
+                            <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                            <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                              onclick="nowuiDashboard.showNotification('top','center')"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Apagar
+                          </td>
+                          <td>
+                            Ativo
+                          </td>
+                          <td class="text-right">
+                            <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                            <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                              onclick="nowuiDashboard.showNotification('top','center')"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>
+                              Visualizar
+                            </td>
+                            <td>
+                              Ativo
+                            </td>
+                            <td class="text-right">
+                              <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                              <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                                onclick="nowuiDashboard.showNotification('top','center')"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                Imprimir
+                              </td>
+                              <td>
+                                Ativo
+                              </td>
+                              <td class="text-right">
+                                <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                                <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                                  onclick="nowuiDashboard.showNotification('top','center')"></i>
+                              </td>
+                            </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-            <div style="margin-top: 5%;" class="table-responsive">
-              <table class="table">
-                <thead class=" text-primary">
-                  <th>
-                    <b>Nome</b>
-                  </th>
-                  <th>
-                      <b>Descrição</b>
-                    </th>
-                    <th>
-                        <b>Endereço</b>
-                      </th>
-                  <th>
-                    <b>Status</b>
-                  </th>
-                  <th class="text-right">
-                    <b>Ações</b>
-                  </th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      Administração
-                    </td>
-                    <td>
-                        Módulo de administração do sistema
-                      </td>
-                      <td>
-                          administracao/
-                        </td>
-                    <td>Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Funcionalidades
-                    </td>
-                    <td>
-                        Módulo de administração do sistema
-                      </td>
-                      <td>
-                          funcionalidade/
-                        </td>
-                    <td>
-                      Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Projetos
-                    </td>
-                    <td>
-                        Módulo de administração do sistema
-                      </td>
-                      <td>
-                          projeto/
-                        </td>
-                    <td>
-                      Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Painel
-                    </td>
-                    <td>
-                        Módulo de painéis do sistema
-                      </td>
-                      <td>
-                          painel/
-                        </td>
-                    <td>
-                      Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                </form>
+              </div>
             </div>
           </div>
-          </form>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="content">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-header">
-            <h5 class="title">Cadastrar ação</h5>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Nome</label>
-                    <input type="text" class="form-control" placeholder="Digite o nome da ação">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label>Status</label>
-                    <select type="text" class="form-control">
-                      <option value="">Selecione o status de atividade</option>
-                      <option value="">Ativo</option>
-                      <option value="">Inativo</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-primary btn-block"
-                    onclick="nowuiDashboard.showNotification('top','left')">Cadastrar novo</button>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-primary btn-block"
-                    onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-primary btn-block"
-                    onclick="nowuiDashboard.showNotification('top','center')">Salvar e Criar</button>
-                </div>
-              </div>
-          </div>
-          
-          <div class="card-body">
-            <h5 style="text-align: center;" class="title">Ações</h5>
-                <div style="margin-left: 25%;" class="col-md-6">
-                  <div class="input-group no-border">
-                    <input type="text" value="" class="form-control" placeholder="Pesquise por nome da ação ou status.">
-                    <div class="input-group-append">
-                      <div class="input-group-text">
-                        <i class="now-ui-icons ui-1_zoom-bold"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            <div style="margin-top: 5%;" class="table-responsive">
-              <table class="table">
-                <thead class=" text-primary">
-                  <th>
-                    <b>Nome</b>
-                  </th>
-                  <th>
-                    <b>Status</b>
-                  </th>
-                  <th class="text-right">
-                    <b>Ações</b>
-                  </th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      Consultar
-                    </td>
-                    <td>Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Cadastrar
-                    </td>
-                    <td>
-                      Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Editar
-                    </td>
-                    <td>
-                      Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Apagar
-                    </td>
-                    <td>
-                      Ativo
-                    </td>
-                    <td class="text-right">
-                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                      <td>
-                        Visualizar
-                      </td>
-                      <td>
-                        Ativo
-                      </td>
-                      <td class="text-right">
-                        <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                        <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                          onclick="nowuiDashboard.showNotification('top','center')"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                        <td>
-                          Imprimir
-                        </td>
-                        <td>
-                          Ativo
-                        </td>
-                        <td class="text-right">
-                          <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                          <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                            onclick="nowuiDashboard.showNotification('top','center')"></i>
-                        </td>
-                      </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          </form>
-        </div>
-      </div>
     </div>
   </div>

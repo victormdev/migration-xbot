@@ -1,0 +1,173 @@
+<div class="tab-pane" id="funcs">
+        <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="title">Cadastrar funcionalidade</h5>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Nome</label>
+                          <input type="text" class="form-control" placeholder="Digite o nome da funcionalidade">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Descrição</label>
+                            <input type="text" class="form-control" placeholder="Digite a descrição da funcionalidade">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Endereço</label>
+                              <input type="text" class="form-control" placeholder="Digite o endereço da funcionalidade">
+                            </div>
+                          </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Status</label>
+                          <select type="text" class="form-control">
+                            <option value="">Selecione o status de atividade</option>
+                            <option value="">Ativo</option>
+                            <option value="">Inativo</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                      </div>
+                      <div class="col-md-2">
+                        <button class="btn btn-primary btn-block"
+                          onclick="nowuiDashboard.showNotification('top','left')">Cadastrar novo</button>
+                      </div>
+                      <div class="col-md-2">
+                        <button class="btn btn-primary btn-block"
+                          onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
+                      </div>
+                      <div class="col-md-2">
+                        <button class="btn btn-primary btn-block"
+                          onclick="nowuiDashboard.showNotification('top','center')">Salvar e Criar</button>
+                      </div>
+                    </div>
+                
+                <div class="card-body">
+                  <h5 style="text-align: center;" class="title">Funcionalidades</h5>
+                      <div style="margin-left: 25%;" class="col-md-6">
+                        <div class="input-group no-border">
+                          <input type="text" value="" class="form-control" placeholder="Pesquise por nome, descrição, endereço ou status.">
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              <i class="now-ui-icons ui-1_zoom-bold"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  <div style="margin-top: 5%;" class="table-responsive">
+                    <table class="table">
+                      <thead class=" text-primary">
+                        <th>
+                          <b>Nome</b>
+                        </th>
+                        <th>
+                            <b>Descrição</b>
+                          </th>
+                          <th>
+                              <b>Endereço</b>
+                            </th>
+                        <th>
+                          <b>Status</b>
+                        </th>
+                        <th class="text-right">
+                          <b>Ações</b>
+                        </th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Administração
+                          </td>
+                          <td>
+                              Módulo de administração do sistema
+                            </td>
+                            <td>
+                                administracao/
+                              </td>
+                          <td>Ativo
+                          </td>
+                          <td class="text-right">
+                            <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                            <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                              onclick="nowuiDashboard.showNotification('top','center')"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Funcionalidades
+                          </td>
+                          <td>
+                              Módulo de administração do sistema
+                            </td>
+                            <td>
+                                funcionalidade/
+                              </td>
+                          <td>
+                            Ativo
+                          </td>
+                          <td class="text-right">
+                            <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                            <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                              onclick="nowuiDashboard.showNotification('top','center')"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Projetos
+                          </td>
+                          <td>
+                              Módulo de administração do sistema
+                            </td>
+                            <td>
+                                projeto/
+                              </td>
+                          <td>
+                            Ativo
+                          </td>
+                          <td class="text-right">
+                            <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                            <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                              onclick="nowuiDashboard.showNotification('top','center')"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Painel
+                          </td>
+                          <td>
+                              Módulo de painéis do sistema
+                            </td>
+                            <td>
+                                painel/
+                              </td>
+                          <td>
+                            Ativo
+                          </td>
+                          <td class="text-right">
+                            <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                            <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
+                              onclick="nowuiDashboard.showNotification('top','center')"></i>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>

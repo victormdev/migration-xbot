@@ -1,594 +1,734 @@
+<div class="panel-header panel-header-sm">
+</div>
 <div class="content">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-header">
-          <h5 class="title">Cadastrar projeto</h5>
-        </div>
-        <div class="card-body">
-          <form>
-            <div class="row">
-              <div class="col-md-5 pr-1">
-                <div class="form-group">
-                  <label>Nome do projeto</label>
-                  <input type="text" class="form-control" placeholder="Digite o nome do projeto">
-                </div>
-              </div>
-              <div class="col-md-3 px-1">
-                <div class="form-group">
-                  <label>Empresa</label>
-                  <input type="text" class="form-control" placeholder="Empresa">
-                </div>
-              </div>
-              <div class="col-md-4 pl-1">
-                <div class="form-group">
-                  <label for="exampleArea">Seguimento</label>
-                  <input class="form-control" placeholder="Digite a área de seguimento">
-                </div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="title">Cadastrar projeto</h5>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="row">
+            <div class="col-md-5 pr-1">
+              <div class="form-group">
+                <label>Nome do projeto</label>
+                <input type="text" class="form-control" placeholder="Digite o nome do projeto">
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="exampleFormControlSelect2">Selecione as integrações desejadas</label>
-                  <select type="text" class="form-control" id="exampleFormControlSelect2" multiple class="form-control"
-                    placeholder="Seguimento da empresa">
-                    <option value="">WhatsApp</option>
-                    <option value="">Facebook</option>
-                    <option value="">Instagram</option>
-                    <option value="">Banco de Dados</option>
-                    <option value="">Slack</option>
-                    <option value="">Nuvem</option>
-                  </select>
-                </div>
+            <div class="col-md-3 px-1">
+              <div class="form-group">
+                <label>Empresa</label>
+                <input type="text" class="form-control" placeholder="Empresa">
+              </div>
+            </div>
+            <div class="col-md-4 pl-1">
+              <div class="form-group">
+                <label for="exampleArea">Seguimento</label>
+                <input class="form-control" placeholder="Digite a área de seguimento">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">Selecione as integrações desejadas</label>
+                <select type="text" class="form-control" id="exampleFormControlSelect2" multiple="" placeholder="Seguimento da empresa">
+                  <option value="">WhatsApp</option>
+                  <option value="">Facebook</option>
+                  <option value="">Instagram</option>
+                  <option value="">Banco de Dados</option>
+                  <option value="">Slack</option>
+                  <option value="">Nuvem</option>
+                </select>
+              </div>
 
-              </div>
-              <div class="col-md-6 pl-1">
-                <div class="form-group">
-                  <label>Situação</label>
-                  <select type="text" class="form-control" placeholder="Situação Atual">
-                    <option value="">Selecione a situação do projeto</option>
-                    <option value="">Em elaboração</option>
-                    <option value="">Em teste</option>
-                    <option value="">Em produção</option>
-                  </select>
-                </div>
+            </div>
+            <div class="col-md-6 pl-1">
+              <div class="form-group">
+                <label>Situação</label>
+                <select type="text" class="form-control" placeholder="Situação Atual">
+                  <option value="">Selecione a situação do projeto</option>
+                  <option value="">Em elaboração</option>
+                  <option value="">Em teste</option>
+                  <option value="">Em produção</option>
+                </select>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label>Status de atividade</label>
-                  <select type="text" class="form-control" placeholder="Status de atividade">
-                    <option value="">Selecione o status</option>
-                    <option value="">Ativo</option>
-                    <option value="">Inativo</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6 pl-1">
-                <div class="form-group">
-                  <label>Data</label>
-                  <input type="date" class="form-control">
-                </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Status de atividade</label>
+                <select type="text" class="form-control" placeholder="Status de atividade">
+                  <option value="">Selecione o status</option>
+                  <option value="">Ativo</option>
+                  <option value="">Inativo</option>
+                </select>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-6">
+            <div class="col-md-6 pl-1">
+              <div class="form-group">
+                <label>Data</label>
+                <input type="date" class="form-control">
               </div>
-              <div class="col-md-2">
-                <button class="btn btn-primary btn-block" onclick="nowuiDashboard.showNotification('top','left')">Novo
-                  projeto</button>
-              </div>
-              <div class="col-md-2">
-                <button class="btn btn-primary btn-block"
-                  onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
-              </div>
-              <div class="col-md-2">
-                <a data-toggle="modal" href="#myModa" class="btn btn-primary btn-block">Salvar e Gerar</a>
-              </div>
-              <!-- Modal -->
-              <div class="modal fade" id="myModa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <div class="card-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h5 style="text-align: center;" class="title">Alerta</h5>
-                        <form>
-                          <div class="row">
-                            <div style="text-align: center;" class="col-md-12">
-                              <label style="color:rgb(65, 58, 58);"><b>Projeto salvo com sucesso!</b></label>
-                              <label style="color:rgb(49, 46, 46);"><b>Deseja importar os dados de outro projeto
-                                  do mesmo seguimento?</b></label>
-                            </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-2">
+              <button class="btn btn-primary btn-block" onclick="nowuiDashboard.showNotification('top','left')">Novo projeto</button>
+            </div>
+            <div class="col-md-2">
+              <button class="btn btn-primary btn-block" onclick="nowuiDashboard.showNotification('top','left')">Limpar</button>
+            </div>
+            <div class="col-md-2">
+              <a data-toggle="modal" href="#myModa" class="btn btn-primary btn-block">Salvar e Gerar</a>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="card-body">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                      <h5 style="text-align: center;" class="title">Alerta</h5>
+                      
+                        <div class="row">
+                          <div style="text-align: center;" class="col-md-12">
+                            <label style="color:rgb(65, 58, 58);"><b>Projeto salvo com sucesso!</b></label>
+                            <label style="color:rgb(49, 46, 46);"><b>Deseja importar os dados de outro projeto
+                                do mesmo seguimento?</b></label>
                           </div>
-                      </div>
+                        </div>
                     </div>
-                    <div class="col-md-12">
-                      <div class="col-md-6">
-                      </div>
-                      <div style="margin-left: 28%;" class="col-md-6">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary">Salvar</button>
-                      </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-6">
                     </div>
-                  </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-              </div><!-- /.modal -->
-            </div>
-            <div class="card-body">
-              <h5 style="text-align: center;" class="title">Projetos</h5>
-              <div style="margin-left: 25%;" class="col-md-6">
-                <div class="input-group no-border">
-                  <input type="text" value="" class="form-control"
-                    placeholder="Pesquise por nome, empresa, seguimento ou integrações.">
-                  <div class="input-group-append">
-                    <div class="input-group-text">
-                      <i class="now-ui-icons ui-1_zoom-bold"></i>
+                    <div style="margin-left: 28%;" class="col-md-6">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Salvar</button>
                     </div>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+          </div>
+          <div class="card-body">
+            <h5 style="text-align: center;" class="title">Projetos</h5>
+            <div style="margin-left: 25%;" class="col-md-6">
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Pesquise por nome, empresa, seguimento ou integrações.">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <i class="now-ui-icons ui-1_zoom-bold"></i>
                   </div>
                 </div>
               </div>
-              <div style="margin-top: 5%;" class="table-responsive">
+            </div>
+            <div style="margin-top: 5%;" class="table-responsive">
+              <table class="table">
+                <thead class=" text-primary">
+                  <tr><th>
+                    <b>Nome</b>
+                  </th>
+                  <th>
+                    <b>Empresa</b>
+                  </th>
+                  <th>
+                    <b>Seguimento</b>
+                  </th>
+                  <th class="text-right">
+                    <b>Integrações</b>
+                  </th>
+                  <th class="text-right">
+                    <b>Ações</b>
+                  </th>
+                </tr></thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Chat X-Testing
+                    </td>
+                    <td>
+                      X-Testing
+                    </td>
+                    <td>
+                      Atendimento ao público
+                    </td>
+                    <td class="text-right">
+                      Facebook; site;
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Chat X-Interno
+                    </td>
+                    <td>
+                      X-Testing
+                    </td>
+                    <td>
+                      Atendimento ao público
+                    </td>
+                    <td class="text-right">
+                      Banco de Dados; Slack;
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Marina
+                    </td>
+                    <td>
+                      Morena
+                    </td>
+                    <td>
+                      Concessionária
+                    </td>
+                    <td class="text-right">
+                      Banco de dados;
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Dina
+                    </td>
+                    <td>
+                      DNA Laboratório
+                    </td>
+                    <td>
+                      Laboratório
+                    </td>
+                    <td class="text-right">
+                      Banco de dados; WhatsApp;
+                    </td>
+                    <td class="text-right">
+                      <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </form>
+        <div class="card card-nav-tabs card-plain">
+          <div class="card-header card-header-success">
+            <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+            <div class="nav-tabs-navigation">
+              <div class="nav-tabs-wrapper">
+                <ul class="nav nav-tabs" data-tabs="tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#intention" data-toggle="tab">Intenção</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#entity" data-toggle="tab">Entidade</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#dialog" data-toggle="tab">Diálogo</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="tab-content text-center">
+              <div class="tab-pane active" id="intention">
+                <div class="col-md-2">
+                  <a data-toggle="modal" href="#myModal" style="height: 60%;" class="btn btn-primary btn-block">Incluir</a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="card-body">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          <h5 class="title">Chat / Cadastrar intenção</h5>
+                          <form>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label>Nome</label>
+                                  <input type="text" class="form-control" placeholder="Nome da intenção">
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label>Status</label>
+                                  <select type="text" class="form-control">
+                                    <option value="">Status de atividade</option>
+                                    <option value="">Ativo</option>
+                                    <option value="">Inativo</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <label>Descrição </label>
+                                  <input type="text" class="form-control" placeholder="Digite a descrição da intenção">
+                                </div>
+                              </div>
+                            </div>
+                        </form></div>
+                      </div>
+                      <div class="col-md-12">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
                 <table class="table">
                   <thead class=" text-primary">
-                    <th>
-                      <b>Nome</b>
+                    <tr><th>
+                      <b>Intenção</b>
                     </th>
                     <th>
-                      <b>Empresa</b>
+                      <b>Descrição</b>
                     </th>
                     <th>
-                      <b>Seguimento</b>
-                    </th>
-                    <th class="text-right">
-                      <b>Integrações</b>
+                      <b>Status</b>
                     </th>
                     <th class="text-right">
                       <b>Ações</b>
                     </th>
-                  </thead>
+                  </tr></thead>
                   <tbody>
                     <tr>
-                      <td>
-                        Chat X-Testing
+                      <td contenteditable="true">
+                        Sobre_MPTBr
                       </td>
                       <td>
-                        X-Testing
+                        A intenção de saber sobre MPT-Br
                       </td>
                       <td>
-                        Atendimento ao público
+                        Ativo
                       </td>
                       <td class="text-right">
-                        Facebook; site;
-                      </td>
-                      <td class="text-right">
-                        <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                        <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                          onclick="nowuiDashboard.showNotification('top','center')"></i>
+                        <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90" onclick="editTitle()"></i>
+                        <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        Chat X-Interno
+                        Sobre_Teste
                       </td>
                       <td>
-                        X-Testing
+                        A intenção de saber sobre testes
                       </td>
                       <td>
-                        Atendimento ao público
-                      </td>
-                      <td class="text-right">
-                        Banco de Dados; Slack;
+                        Ativo
                       </td>
                       <td class="text-right">
                         <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                        <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                          onclick="nowuiDashboard.showNotification('top','center')"></i>
+                        <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        Marina
+                        Sobre_BPM
                       </td>
                       <td>
-                        Morena
+                        A intenção de saber sobre BPM
                       </td>
                       <td>
-                        Concessionária
-                      </td>
-                      <td class="text-right">
-                        Banco de dados;
+                        Ativo
                       </td>
                       <td class="text-right">
                         <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                        <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                          onclick="nowuiDashboard.showNotification('top','center')"></i>
+                        <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        Dina
+                        Encerrar_Conversa
                       </td>
                       <td>
-                        DNA Laboratório
+                        Intenção de encerrar a conversa
                       </td>
                       <td>
-                        Laboratório
-                      </td>
-                      <td class="text-right">
-                        Banco de dados; WhatsApp;
+                        Ativo
                       </td>
                       <td class="text-right">
                         <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                        <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                          onclick="nowuiDashboard.showNotification('top','center')"></i>
+                        <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-            </div>
-          </form>
-          <div class="card card-nav-tabs card-plain">
-            <div class="card-header card-header-success">
-              <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-              <div class="nav-tabs-navigation">
-                <div class="nav-tabs-wrapper">
-                  <ul class="nav nav-tabs" data-tabs="tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#intention" data-toggle="tab">Intenção</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#entity" data-toggle="tab">Entidade</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#dialog" data-toggle="tab">Diálogo</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="tab-content text-center">
-                <div class="tab-pane active" id="intention">
-                  <div class="col-md-2">
-                    <a data-toggle="modal" href="#myModal" style="height: 60%;"
-                      class="btn btn-primary btn-block">Incluir</a>
-                  </div>
-                  <!-- Modal -->
-                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                    aria-hidden="true">
+              <div class="tab-pane" id="entity">
+                <div class="col-md-2">
+
+                    <a data-toggle="modal" href="#myModa2" style="height: 60%;" class="btn btn-primary btn-block">Incluir</a>
+                  </div><div class="modal fade" id="myModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-body">
                           <div class="card-body">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h5 class="title">Chat / Cadastrar intenção</h5>
-                            <form>
+                            <h5 class="title">Chat / Cadastrar entidade</h5>
+                            
                               <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                   <div class="form-group">
                                     <label>Nome</label>
-                                    <input type="text" class="form-control" placeholder="Nome da intenção">
+                                    <input type="text" class="form-control" placeholder="Digite o nome da entidade">
                                   </div>
                                 </div>
                                 <div class="col-md-6">
                                   <div class="form-group">
                                     <label>Status</label>
                                     <select type="text" class="form-control">
-                                      <option value="">Status de atividade</option>
+                                      <option value="">Selecione o status</option>
                                       <option value="">Ativo</option>
                                       <option value="">Inativo</option>
                                     </select>
                                   </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                   <div class="form-group">
-                                    <label>Descrição </label>
-                                    <input type="text" class="form-control"
-                                      placeholder="Digite a descrição da intenção">
-                                  </div>
-                                </div>
-                                <div class="col-md-4 " data-tabs="tabs">
-                                  <b><i style="color: rgb(0, 0, 0);" class="now-ui-icons ui-1_simple-add"></i></b>
-                                  <label style="margin-left: 5px;" onclick="Mudarestado('minhaDiv')"> Adicionais</label>
-                                </div>
-                                <div class="col-md-12" id="minhaDiv" style="display:none;">
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label>Usa slot?</label>
-                                      <select type="text" class="form-control">
-                                        <option value="">Selecione o tipo</option>
-                                        <option value="">Não</option>
-                                        <option value="">Sim</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label>Tipo pasta?</label>
-                                      <select type="text" class="form-control">
-                                        <option value="">Selecione o tipo</option>
-                                        <option value="">Não</option>
-                                        <option value="">Sim</option>
-                                      </select>
-                                    </div>
+                                    <label>Tipo</label>
+                                    <input type="text" class="form-control" placeholder="Descrição da entidade">
                                   </div>
                                 </div>
                               </div>
                           </div>
                         </div>
-                        <div class="col-md-12">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                          <button type="button" class="btn btn-primary">Salvar</button>
-                        </div>
-                      </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                  </div><!-- /.modal -->
-                  <table class="table">
-                    <thead class=" text-primary">
-                      <th>
-                        <b>Intenção</b>
-                      </th>
-                      <th>
-                        <b>Descrição</b>
-                      </th>
-                      <th>
-                        <b>Status</b>
-                      </th>
-                      <th class="text-right">
-                        <b>Ações</b>
-                      </th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td contenteditable="true">
-                          Sobre_MPTBr
-                        </td>
-                        <td>
-                          A intenção de saber sobre MPT-Br
-                        </td>
-                        <td>
-                          Ativo
-                        </td>
-                        <td class="text-right">
-                          <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"
-                            onclick="editTitle()"></i>
-                          <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                            onclick="nowuiDashboard.showNotification('top','center')"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Sobre_Teste
-                        </td>
-                        <td>
-                          A intenção de saber sobre testes
-                        </td>
-                        <td>
-                          Ativo
-                        </td>
-                        <td class="text-right">
-                          <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                          <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                            onclick="nowuiDashboard.showNotification('top','center')"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Sobre_BPM
-                        </td>
-                        <td>
-                          A intenção de saber sobre BPM
-                        </td>
-                        <td>
-                          Ativo
-                        </td>
-                        <td class="text-right">
-                          <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                          <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                            onclick="nowuiDashboard.showNotification('top','center')"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Encerrar_Conversa
-                        </td>
-                        <td>
-                          Intenção de encerrar a conversa
-                        </td>
-                        <td>
-                          Ativo
-                        </td>
-                        <td class="text-right">
-                          <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                          <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                            onclick="nowuiDashboard.showNotification('top','center')"></i>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="tab-pane" id="entity">
-                  <table class="table">
-                    <div class="col-md-2">
-
-                      <a data-toggle="modal" href="#myModa2" style="height: 60%;"
-                        class="btn btn-primary btn-block">Incluir</a>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="myModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                      aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-body">
-                            <div class="card-body">
-                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                              <h5 class="title">Chat / Cadastrar entidade</h5>
-                              <form>
-                                <div class="row">
-                                  <div class="col-md-12">
-                                    <div class="form-group">
-                                      <label>Nome</label>
-                                      <input type="text" class="form-control" placeholder="Digite o nome da entidade">
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label>Status</label>
-                                      <select type="text" class="form-control">
-                                        <option value="">Selecione o status</option>
-                                        <option value="">Ativo</option>
-                                        <option value="">Inativo</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label>Tipo</label>
-                                      <input type="text" class="form-control" placeholder="Descrição da entidade">
-                                    </div>
+                        <div class="modal-body">
+                          <div class="card-body">
+                            
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label>Nome</label>
+                                    <input type="text" class="form-control" placeholder="Digite o nome da entidade">
                                   </div>
                                 </div>
-                            </div>
-                          </div>
-                          <div class="modal-body">
-                            <div class="card-body">
-                              <form>
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label>Nome</label>
-                                      <input type="text" class="form-control" placeholder="Digite o nome da entidade">
-                                    </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label>Tipo</label>
+                                    <select type="text" class="form-control">
+                                      <option value="">Selecione o tipo</option>
+                                      <option value="">Sinônimo</option>
+                                      <option value="">Função</option>
+                                      <option value="">Método</option>
+                                    </select>
                                   </div>
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label>Tipo</label>
-                                      <select type="text" class="form-control">
-                                        <option value="">Selecione o tipo</option>
-                                        <option value="">Sinônimo</option>
-                                        <option value="">Função</option>
-                                        <option value="">Método</option>
-                                      </select>
-                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <label>Exemplos:</label>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ex: Asno">
                                   </div>
-                                  <div class="col-md-12">
-                                    <label>Exemplos:</label>
+                                </div>
+                                <div class="col-md-1" style="margin-top: 2%;">
+                                  <i style="color: rgb(255, 30, 0);" class="now-ui-icons ui-1_simple-delete"></i>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ex: Burrice">
                                   </div>
-                                  <div class="col-md-5">
-                                    <div class="form-group">
-                                      <input type="text" class="form-control" placeholder="Ex: Asno">
-                                    </div>
-                                  </div>
-                                  <div class="col-md-1" style="margin-top: 2%;">
-                                    <i style="color: rgb(255, 30, 0);" class="now-ui-icons ui-1_simple-delete"></i>
-                                  </div>
-                                  <div class="col-md-5">
-                                    <div class="form-group">
-                                      <input type="text" class="form-control" placeholder="Ex: Burrice">
-                                    </div>
-                                  </div>
-                                  <div class="col-md-1" style="margin-top: 2%;">
-                                    <i style="color: rgb(0, 126, 6);" class="now-ui-icons ui-1_simple-add"></i>
-                                  </div>
-                              </form>
-                            </div>
+                                </div>
+                                <div class="col-md-1" style="margin-top: 2%;">
+                                  <i style="color: rgb(0, 126, 6);" class="now-ui-icons ui-1_simple-add"></i>
+                                </div>
+                            
                           </div>
                         </div>
-                        <div class="col-md-12">
-                          <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="tooltip"
-                            data-placement="top" title="em Cima">Fechar</button>
-                          <button type="button" class="btn btn-primary">Salvar</button>
+                      </div>
+                      <div class="col-md-12">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="tooltip" data-placement="top" title="em Cima">Fechar</button>
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+              </div><table class="table">
+                  
+                  <!-- Modal -->
+                  <!-- /.modal -->
+              <thead class=" text-primary">
+                <tr><th>
+                  <b>Entidade</b>
+                </th>
+                <th>
+                  <b>Tipo</b>
+                </th>
+                <th>
+                  <b>Status</b>
+                </th>
+                <th class="text-right">
+                  <b>Ações</b>
+                </th>
+              </tr></thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Sobre_Fabrica_Teste
+                  </td>
+                  <td>
+                    Sinônimo
+                  </td>
+                  <td>
+                    Ativo
+                  </td>
+                  <td class="text-right">
+                    <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Sobre_Integridade
+                  </td>
+                  <td>
+                    Sinônimo
+                  </td>
+                  <td>
+                    Ativo
+                  </td>
+                  <td class="text-right">
+                    <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Iso_9001
+                  </td>
+                  <td>
+                    Sinônimo
+                  </td>
+                  <td>
+                    Ativo
+                  </td>
+                  <td class="text-right">
+                    <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Sobre_Acessibilidade
+                  </td>
+                  <td>
+                    Sinônimo
+                  </td>
+                  <td>
+                    Ativo
+                  </td>
+                  <td class="text-right">
+                    <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
+                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
+                  </td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+            <div class="tab-pane" id="dialog">
+              <div class="col-md-2">
+                <a data-toggle="modal" href="#myModa3" style="height: 60%;" class="btn btn-primary btn-block">Incluir</a>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="myModa3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="card-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h5 class="title">Chat / Cadastrar diálogo</h5>
+                        <form>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Nome do nó</label>
+                                <input type="text" class="form-control" placeholder="Nome do nó">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Nó pai</label>
+                                <input type="text" class="form-control" placeholder="Nome do nó do pai">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Condição</label>
+                                <input type="text" class="form-control" placeholder="Comando de condição">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Tipo pasta?</label>
+                                <select type="text" class="form-control">
+                                  <option value="">Selecione o tipo</option>
+                                  <option value="">Não</option>
+                                  <option value="">Sim</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Descrição </label>
+                                <input type="text" class="form-control" placeholder="Descrição da intenção">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Status</label>
+                                <select type="text" class="form-control">
+                                  <option value="">Selecione o status</option>
+                                  <option value="">Ativo</option>
+                                  <option value="">Inativo</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                      </form></div>
+                    </div>
+                    <div class="col-md-4 " data-tabs="tabs">
+                      <b><i style="color: rgb(0, 0, 0);" onclick="Mudarestado('minhaDiv')" class="now-ui-icons ui-1_simple-add"></i></b>
+                      <label style="margin-left: 5px; color: green;" onclick="Mudarestado('minhaDiv')">
+                        <b>Adicionais</b></label>
+                    </div>
+                    <div id="minhaDiv" style="display:none; margin-top: 5%;">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Usa slot?</label>
+                          <select type="text" class="form-control">
+                            <option value="">Selecione o tipo</option>
+                            <option value="">Não</option>
+                            <option value="">Sim</option>
+                          </select>
                         </div>
-                      </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Tipo pasta?</label>
+                          <select type="text" class="form-control">
+                            <option value="">Selecione o tipo</option>
+                            <option value="">Não</option>
+                            <option value="">Sim</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+              <table class="table">
                 <thead class=" text-primary">
-                  <th>
-                    <b>Entidade</b>
+                  <tr><th>
+                    <b>Nó</b>
                   </th>
                   <th>
-                    <b>Tipo</b>
+                    <b>Nó pai</b>
                   </th>
                   <th>
-                    <b>Status</b>
+                    <b>Tipo pasta?</b>
+                  </th>
+                  <th>
+                    <b>Condição</b>
                   </th>
                   <th class="text-right">
                     <b>Ações</b>
                   </th>
-                </thead>
+                </tr></thead>
                 <tbody>
                   <tr>
                     <td>
-                      Sobre_Fabrica_Teste
+                      Saudação
                     </td>
                     <td>
-                      Sinônimo
+                      -
                     </td>
                     <td>
-                      Ativo
+                      Não
+                    </td>
+                    <td>
+                      #Saudacao
                     </td>
                     <td class="text-right">
                       <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      Sobre_Integridade
+                      Saudação
                     </td>
                     <td>
-                      Sinônimo
+                      -
                     </td>
                     <td>
-                      Ativo
+                      Não
+                    </td>
+                    <td>
+                      #SobreEmpresa
                     </td>
                     <td class="text-right">
                       <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      Iso_9001
+                      Localização
                     </td>
                     <td>
-                      Sinônimo
+                      -
                     </td>
                     <td>
-                      Ativo
+                      Não
+                    </td>
+                    <td>
+                      @Local
                     </td>
                     <td class="text-right">
                       <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      Sobre_Acessibilidade
+                      Atendimento
                     </td>
                     <td>
-                      Sinônimo
+                      -
                     </td>
                     <td>
-                      Ativo
+                      Não
+                    </td>
+                    <td>
+                      #Atender
                     </td>
                     <td class="text-right">
                       <i style="color: rgb(0, 119, 255);" class="now-ui-icons ui-2_settings-90"></i>
-                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove"
-                        onclick="nowuiDashboard.showNotification('top','center')"></i>
+                      <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-remove" onclick="nowuiDashboard.showNotification('top','center')"></i>
                     </td>
                   </tr>
                 </tbody>
-                </table>
-              </div>
+              </table>
             </div>
           </div>
         </div>
@@ -596,7 +736,8 @@
     </div>
   </div>
 </div>
-
+</div>
+</div>
 <div class="content">
   <div class="row">
     <div class="col-md-12">
@@ -612,7 +753,7 @@
                 <input type="text" class="form-control" placeholder="Digite o nome do nó">
               </div>
             </div>
-            <form>
+            
               <div class="col-md-4">
                 <div class="form-group">
                   <label>Usa slot?</label>
@@ -620,21 +761,19 @@
                 <div style="margin-top: -4%;">
                   <div class="form-check form-check-radio form-check-inline">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1"> Sim
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Sim
                       <span class="form-check-sign"></span>
                     </label>
                   </div>
                   <div class="form-check form-check-radio form-check-inline">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                        value="option2"> Não
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Não
                       <span class="form-check-sign"></span>
                     </label>
                   </div>
                 </div>
               </div>
-            </form>
+            
             <div class="col-md-4">
               <div class="form-group">
                 <label>Múltipla resposta?</label>
@@ -642,15 +781,13 @@
               <div style="margin-top: -4%;">
                 <div class="form-check form-check-radio form-check-inline">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                      value="option1"> Sim
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Sim
                     <span class="form-check-sign"></span>
                   </label>
                 </div>
                 <div class="form-check form-check-radio form-check-inline">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                      value="option2"> Não
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Não
                     <span class="form-check-sign"></span>
                   </label>
                 </div>
@@ -692,7 +829,7 @@
           <div class="table-responsive">
             <table class="table">
               <thead class=" text-primary">
-                <th>
+                <tr><th>
                   <b>Slot</b>
                 </th>
                 <th>
@@ -704,7 +841,7 @@
                 <th class="text-right">
                   <b></b>
                 </th>
-              </thead>
+              </tr></thead>
               <tbody>
                 <tr>
                   <td>
@@ -729,8 +866,7 @@
                     Valor:<input type="text" value="" style="margin-left: 5%;">
                   </td>
                   <td class="text-right">
-                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-delete"
-                      onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-delete" onclick="nowuiDashboard.showNotification('top','center')"></i>
                   </td>
                 </tr>
                 <tr>
@@ -743,8 +879,7 @@
                     Valor:<input type="text" value="" style="margin-left: 5%;">
                   </td>
                   <td class="text-right">
-                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-delete"
-                      onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-delete" onclick="nowuiDashboard.showNotification('top','center')"></i>
                   </td>
                 </tr>
                 <tr>
@@ -757,8 +892,7 @@
                     Valor:<input type="text" value="" style="margin-left: 5%;">
                   </td>
                   <td class="text-right">
-                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-delete"
-                      onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-delete" onclick="nowuiDashboard.showNotification('top','center')"></i>
                   </td>
                 </tr>
               </tbody>
@@ -772,12 +906,10 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-2">
-              <button class="btn btn-primary btn-block"
-                onclick="nowuiDashboard.showNotification('top','left')">Cancelar</button>
+              <button class="btn btn-primary btn-block" onclick="nowuiDashboard.showNotification('top','left')">Cancelar</button>
             </div>
             <div class="col-md-2 pl-1">
-              <button class="btn btn-primary btn-block"
-                onclick="nowuiDashboard.showNotification('top','center')">Salvar</button>
+              <button class="btn btn-primary btn-block" onclick="nowuiDashboard.showNotification('top','center')">Salvar</button>
             </div>
           </div>
         </div>
@@ -785,7 +917,7 @@
           <div class="table-responsive">
             <table class="table">
               <thead class=" text-primary">
-                <th>
+                <tr><th>
                   <b>Múltipla Resposta</b>
                 </th>
                 <th>
@@ -794,7 +926,7 @@
                 <th class="text-right">
                   <b></b>
                 </th>
-              </thead>
+              </tr></thead>
               <tbody>
                 <tr>
                   <td>
@@ -814,8 +946,7 @@
                   <td>Texto:<input type="text" value="" style="margin-left: 5%;">
                   </td>
                   <td class="text-right">
-                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-delete"
-                      onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-delete" onclick="nowuiDashboard.showNotification('top','center')"></i>
                   </td>
                 </tr>
                 <tr>
@@ -825,8 +956,7 @@
                   <td>Texto:<input type="text" value="" style="margin-left: 5%;">
                   </td>
                   <td class="text-right">
-                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-delete"
-                      onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-delete" onclick="nowuiDashboard.showNotification('top','center')"></i>
                   </td>
                 </tr>
                 <tr>
@@ -836,8 +966,7 @@
                   <td>Texto:<input type="text" value="" style="margin-left: 5%;">
                   </td>
                   <td class="text-right">
-                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-delete"
-                      onclick="nowuiDashboard.showNotification('top','center')"></i>
+                    <i style="margin-left: 10px; color: rgb(233, 19, 19);" class="now-ui-icons ui-1_simple-delete" onclick="nowuiDashboard.showNotification('top','center')"></i>
                   </td>
                 </tr>
               </tbody>
@@ -851,16 +980,14 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-2">
-              <button class="btn btn-primary btn-block"
-                onclick="nowuiDashboard.showNotification('top','left')">Cancelar</button>
+              <button class="btn btn-primary btn-block" onclick="nowuiDashboard.showNotification('top','left')">Cancelar</button>
             </div>
             <div class="col-md-2 pl-1">
-              <button class="btn btn-primary btn-block"
-                onclick="nowuiDashboard.showNotification('top','center')">Salvar</button>
+              <button class="btn btn-primary btn-block" onclick="nowuiDashboard.showNotification('top','center')">Salvar</button>
             </div>
           </div>
         </div>
-        </form>
+        
       </div>
     </div>
   </div>

@@ -1,0 +1,75 @@
+<div class="wrapper">
+    <div class="sidebar" data-color="green">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+      <div class="logo" style="text-align: center;">
+        <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+          <img src="../assets/img/icon-sidebar.png">
+        </a>
+        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          <b>X-BOT</b><br> Criador de chatbots
+        </a>
+      </div>
+      <div class="sidebar-wrapper" id="sidebar-wrapper">
+        <ul class="nav">
+          <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/dashboard']">
+              <i class="now-ui-icons business_chart-bar-32"></i>
+              <p>Painel</p>
+            </a>
+          </li>
+          <li [routerLinkActive]="['active']" >
+            <a [routerLink]="['/administration']" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="now-ui-icons objects_key-25"></i>
+              <p class="dropdown-toggle">Administração</p>
+              <div class="dropdown-menu" style="margin-left: 20px; width: 80%; margin-top: -30%;">
+                  <a class="dropdown-item" href="#">Usuário</a>
+                  <a class="dropdown-item" href="#">Papel</a>
+                  <a class="dropdown-item" href="#">Funcionalidade</a>
+                  <a class="dropdown-item" href="#">Ação</a>
+                </div>
+            </a>
+          </li>
+          <li [routerLinkActive]="['active']" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a [routerLink]="['/funcs']">
+              <i class="now-ui-icons ui-1_send"></i>
+              <p class="dropdown-toggle">Funcionalidades</p>
+              <div class="dropdown-menu" style="margin-left: 20px; width: 80%; margin-top: -50%;">
+                <a class="dropdown-item" href="#">Empresa</a>
+                <a class="dropdown-item" href="#">Segmento</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Chat</a>
+                <a style="width: 70%; margin-left: 25%;" class="dropdown-item" href="#">Intenção</a>
+                <a style="width: 70%; margin-left: 25%;" class="dropdown-item" href="#">Entidade</a>
+                <a style="width: 70%; margin-left: 25%;" class="dropdown-item" href="#">Diálogo</a>
+              </div>
+            </a>
+          </li>
+          <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/projects']">
+              <i class="now-ui-icons design_bullet-list-67"></i>
+              <p>Projetos</p>
+            </a>
+          </li>
+          <li class="active-pro">
+            <a href="./upgrade.html">
+              <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+              <p>Sincronizar dados</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="main-panel" id="main-panel">
+      <app-navbar></app-navbar>
+    </div>
+
+    <div class="main-panel" id="main-panel">
+    
+      <!-- Navegação das páginas -->
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
